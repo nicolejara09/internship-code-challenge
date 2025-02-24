@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Movie App 🎬
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TMDb](https://img.shields.io/badge/TMDb-01D277?style=for-the-badge&logo=themoviedatabase&logoColor=white)
 
-## Available Scripts
+Welcome to **Movie App**! A web application built with React that lets you explore movies using **The Movie Database (TMDb)** API. Discover movies by genre, search for specific titles, and save your favorites for quick access.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Key Features 🚀
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Browse by Genre**: Easily filter movies by their genre.
+- **Search Functionality**: Find movies using keywords.
+- **Favorites**: Save your favorite movies for quick access.
+- **Movie Details**: View detailed information like synopsis, rating, and release date.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Prerequisites 📋
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Make sure you have the following installed:
 
-### `npm run build`
+- **Node.js** (version 14 or higher)
+- **npm** (comes with Node.js) or **yarn** (optional)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup Instructions 🛠️
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Clone the repository
 
-### `npm run eject`
+```bash
+git clone <repository-url>
+cd <repository-folder>
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2. Install dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+or if you use yarn:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+yarn install
+```
 
-## Learn More
+### 3. Start the application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+or with yarn:
 
-### Code Splitting
+```bash
+yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 4. Open in your browser
 
-### Analyzing the Bundle Size
+Go to `http://localhost:3000` to view the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Technologies Used 💻
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **React**: JavaScript library for building user interfaces.
+- **TMDb API**: Movie and TV database.
+- **CSS**: Custom styles for a visually appealing experience.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Screenshots 📸
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Captura de pantalla 2025-02-23 235330](https://github.com/user-attachments/assets/a99f6e46-4395-4fd1-bbb0-a0f282e4cd4f)
+![Captura de pantalla 2025-02-24 000105](https://github.com/user-attachments/assets/1cdb8f41-f227-43bc-862a-e1e0f83d7cfd)
+![Captura de pantalla 2025-02-23 235954](https://github.com/user-attachments/assets/4b890efb-9130-4d5a-a4e5-ce96b0668c9b)
+![Captura de pantalla 2025-02-23 235345](https://github.com/user-attachments/assets/d53ff350-a271-46e8-a2f7-99a56d6657cf)
