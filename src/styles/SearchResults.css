@@ -1,0 +1,51 @@
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px; 
+  align-items: start;
+  padding: 0 20px 20px;
+  box-sizing: border-box;
+}
+
+.movie-card-ref {
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pagination-loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.pagination-loading-text {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: var(--primary-color);
+  animation: fadeIn 1.5s infinite;
+}
+
+@keyframes fadeIn {
+  0%, 100% {
+      opacity: 0.5;
+  }
+  50% {
+      opacity: 1;
+  }
+}

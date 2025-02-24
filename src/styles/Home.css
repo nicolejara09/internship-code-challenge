@@ -1,0 +1,125 @@
+.home-container {
+  flex: 1;
+  padding: 20px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  box-sizing: border-box;
+}
+
+.category-section {
+  margin-bottom: 30px;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overflow: hidden;
+  gap: 20px; 
+  padding: 20px;
+  scroll-behavior: smooth;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.movie-card-ref {
+  min-width: 220px;
+  max-width: 226px;
+  height: auto;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.movie-poster-wrapper-ref {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--card-bg);
+}
+
+.movie-details-ref {
+  height: 100%;
+  text-align: center;
+  background-color: var(--background-color);
+  border-radius: 0 0 10px 10px; 
+  background-color: var(--card-bg);
+}
+
+.movie-list::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.scroll-buttons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -40px;
+}
+
+.scroll-left,
+.scroll-right {
+  background-color: rgba(255, 255, 255, 0.8); 
+  color: black; 
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-left:hover,
+.scroll-right:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+.scroll-left {
+  position: absolute;
+  left: 30px;
+  top: 11rem; 
+  transform: translateY(0);
+}
+
+.scroll-right {
+  position: absolute;
+  right: 25px;
+  top: 11rem;
+  transform: translateY(0);
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  height: 75vh;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}

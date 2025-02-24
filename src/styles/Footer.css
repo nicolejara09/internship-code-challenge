@@ -1,0 +1,37 @@
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: var(--components-bg);
+  color: var(--components-text);
+  transition: background-color 0.3s, color 0.3s;
+  border-top: 1px solid black;
+}
+  
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+}

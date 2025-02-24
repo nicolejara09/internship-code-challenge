@@ -1,0 +1,208 @@
+.favorites-page {
+  padding: 20px;
+  background-color: var(--background-color);
+   color: var(--text-color);
+}
+
+.favorites-page h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.movie-poster {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.movie-title {
+  font-size: 1.2rem;
+  margin: 15px 0px 5px 0px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.movie-details {
+  padding: 10px;
+  text-align: center;
+}
+
+.favorite-icon {
+  font-size: 1.5rem; 
+  color: #ff4757; 
+  transition: color 0.3s ease; 
+}
+.favorite-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--button-favorite);
+  border: 1px solid var(--button-text);
+  border-radius: 50%;
+  width: 40px; 
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  z-index: 10;
+}
+
+.favorite-button:hover {
+  background: var(--hover-icon-color);
+  transform: scale(1.1);
+}
+
+.favorite-button::after {
+  content: "Remove";
+  position: absolute;
+  right: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.favorite-button:hover::after {
+  opacity: 1;
+}
+
+.edit-button {
+  background-color: var(--primary-color);
+  color: var(--button-text);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 5px auto;
+}
+
+.edit-button:hover {
+  background-color: var(--button-favorite);
+}
+
+.movie-note {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  margin: 10px auto 18px;
+  background-color: var(--button-favorite);
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid var(--button-favorite);
+  width: 85%;
+  max-height: 50px; 
+  overflow-y: scroll;
+  text-align: center;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+
+.movie-note::-webkit-scrollbar {
+  display: none;
+}
+
+.edit-form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit-note {
+  width: 85%;
+  height: 50px;
+  padding: 8px;
+  margin: 10px auto;
+  border: 1px solid var(--button-favorite);
+  border-radius: 6px;
+  background-color: var(--button-favorite);
+  color: var(--text-color);
+  resize: none;
+  text-align: left;
+  font-size: 0.9rem;
+  text-align: center;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+
+.edit-form button {
+  background-color: var(--primary-color);
+  color: var(--button-text);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 5px auto;
+    
+}
+
+.edit-form button:hover {
+  background-color: var(--hover-icon-color);
+}
+
+.movie-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.movie-link:hover {
+  text-decoration: none;
+}
+
+.not-fav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  height: 75vh;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
